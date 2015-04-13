@@ -1,0 +1,39 @@
+(A)compile: ./lab3_a
+	result:2172
+
+(B)compile: ./lab3_b
+	result:
+
+		Size Value = 1000:
+			sort(): 0.0000 seconds
+			v1/v2 are different.
+			insertion_sort(): 0.0100 seconds
+			v1/v2 are the same.
+
+		Size Value = 10000:
+			sort(): 0.0000 seconds
+			v1/v2 are different.
+			insertion_sort(): 1.2900 seconds
+			v1/v2 are the same.
+
+		Size Value = 100000:
+			sort(): 0.0400 seconds
+			v1/v2 are different.
+			insertion_sort(): 124.0100 seconds
+			v1/v2 are the same.
+
+		Size Value = 1000000:
+			sort(): 0.5400 seconds
+			v1/v2 are different.
+			insertion_sort(): 12823.0100 seconds
+			v1/v2 are the same.
+	sort():O(nlogn)
+	insertion_sort():O(n^2)
+	prove:Let n = 1000000
+			sort():1000000*log1000000
+					 =6*10^6
+					~=10^7
+			insertion_sort():1000000^2
+								  =10^12
+			10^12/10^7 ~= 12823.0100/0.5400
+
